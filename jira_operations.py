@@ -17,8 +17,9 @@ class JiraClient:
             f'{self.jira_url}{self.api_endpoint}',
             auth=HTTPBasicAuth(self.username, self.api_token),
             headers={'Content-Type': 'application/json'},
-            data=json.dumps(issue_data)
+            data=issue_data
         )
+
 
         if response.status_code == 201:
             return {'success': True, 'key': response.json().get('key')}
