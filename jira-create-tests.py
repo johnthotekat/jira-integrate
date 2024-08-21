@@ -5,6 +5,7 @@ import json
 import os
 
 #https://www.postman.com/api-evangelist/atlassian-jira/request/fasib33/create-issue?tab=body
+#https://petstore.swagger.io/?url=https://api.apis.guru/v2/specs/atlassian.com/jira/1001.0.0-SNAPSHOT/openapi.json#/Issues/createIssue
 # Replace with your Jira instance details
 JIRA_URL = os.getenv('JIRA_URL')
 USERNAME = os.getenv('USERNAME')
